@@ -28,7 +28,9 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ALLOWED_HOSTS = ['django-blog-2023-f439fca3262e.herokuapp.com', 'localhost', '8000-godinhoweverson-django-b-1y4jtqrho9.us2.codeanyapp.com']
 
